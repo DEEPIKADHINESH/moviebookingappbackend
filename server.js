@@ -56,10 +56,10 @@ app.get("/", (req, res) => {
   });
 });
 
-require("./routes/movie.routes")(app);
-require("./routes/artist.routes")(app);
-require("./routes/genre.routes")(app);
-require("./routes/user.routes")(app)
+require("./routes/movie.route")(app);
+require("./routes/artist.route")(app);
+require("./routes/genre.route")(app);
+require("./routes/user.route")(app)
 
 app.listen(PORT, function () {
   console.log("express has started on port ", PORT);
